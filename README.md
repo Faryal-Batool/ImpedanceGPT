@@ -49,14 +49,15 @@ Our key contributions are:
 ## Installation
 For installation on server use the following commands
 ```bash
-git clone https://github.com/yourusername/ImpedanceGPT.git
+git clone https://github.com/Faryal-Batool/ImpedanceGPT.git
 cd ImpedanceGPT
+cd rag_vlm
 pip install -r requirements.txt
 ```
 
 For installation on ground station use the following commands
 ```bash
-git clone https://github.com/yourusername/ImpedanceGPT.git
+git clone https://github.com/Faryal-Batool/ImpedanceGPT.git
 cd ImpedanceGPT
 cd APF
 pip install -r requirements.txt
