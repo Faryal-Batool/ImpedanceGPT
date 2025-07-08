@@ -81,19 +81,19 @@ The optimal parameters reflected:
 This data was saved in a file named `scenarios_description.json`. To prepare it for use with Retrieval-Augmented Generation (RAG), vector embeddings can be generated using the following script:
 
 ```
-python create_vector_embeddings.py
+python3 create_vector_embeddings.py
 ```
 
 To run the VLM model and retrieve the corresponding impedance parameters based on the current scenario, use the following script:
 
 ```
-python rag_vlm.py
+python3 rag_vlm.py
 ```
 
 The impedance parameters output by the above script are then passed to the Artificial Potential Field (APF) planner, which uses them to control the swarm of drones. The code is written in ROS1. To run the full swarm navigation from start to goal using these parameters, execute:
 
 ```
-python swarm_vlm.py
+python3 swarm_vlm.py
 ```
 
 ## Experimental Results
@@ -133,8 +133,6 @@ python swarm_vlm.py
 **Scenario 4**: With one dynamic and one static soft obstacle, the velocity further decreased to **0.6 m/s**, demonstrating the system’s adaptive response to ensure safety around soft, dynamic obstacles.
 
 ## Experiment Video
-
-> Upload video and embed it here:
 
 [![Watch the video](https://img.youtube.com/vi/JTdeg9bAzL4/0.jpg)](https://www.youtube.com/watch?v=JTdeg9bAzL4)
 
