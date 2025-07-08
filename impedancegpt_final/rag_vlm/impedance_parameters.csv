@@ -1,0 +1,6 @@
+Parameter,Value
+mass,5.0
+damping,2
+stiffness,0.1
+impedance_force_coefficient,0.45
+distance_between_drones_and_virtual_leader,0.55

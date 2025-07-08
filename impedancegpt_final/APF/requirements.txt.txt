@@ -1,0 +1,5 @@
+rclpy
+numpy
+crazyflie @ git+https://github.com/IMRCLab/crazyflie-lib-python.git
+crazyflie_interfaces
+motion_capture_tracking_interfaces

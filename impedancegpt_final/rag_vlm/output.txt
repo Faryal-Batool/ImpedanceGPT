@@ -1,0 +1,1 @@
+ Total obstacles: 3, Soft (human), Positions: Before gate: 0, After gate: 2, Spacing: Widely spaced, Distances between humans: human1-human2: 10 pixels/units, human2-human3: 15 pixels/units

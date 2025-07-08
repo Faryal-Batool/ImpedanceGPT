@@ -1,0 +1,20 @@
+ Total obstacles: 1, Hard (red tripod stand), Positions: Before gate: 0, After gate: 1, Spacing: No distance, Distances between red tripod stand: red tripod stand1-red tripod stand2: 0 pixels/units
+ Total obstacles: 2, Soft (human), Positions: Before gate: 0, After gate: 1, Spacing: 1 unit, Distances between humans: human1-human2: 1 unit, human2-human3: 1 unit
+ Total obstacles: 1, Hard (red tripod stand), Positions: Before gate: 0, After gate: 1, Spacing: 0, Distances between red tripod stand: red tripod stand1-red tripod stand2: 0 pixels/units
+ Total obstacles: 2, Soft (human), Positions: Before gate: 0, After gate: 1, Spacing: 1 unit, Distances between humans: human1-human2: 1 unit, human2-human3: 1 unit
+ Total obstacles: 2, Hard (red tripod stand), Positions: Before gate: 0, After gate: 2, Spacing: Widely spaced, Distances between red tripod stand: red tripod stand1-red tripod stand2: 20 pixels/units
+ Total obstacles: 3, Soft (human), Positions: Before gate: 0, After gate: 2, Spacing: Widely spaced, Distances between humans: human1-human2: 10 pixels/units, human2-human3: 15 pixels/units
+ Total obstacles: 2, Hard (red tripod stand), Positions: Before gate: 0, After gate: 2, Spacing: Closely spaced based on distance, Distances between red tripod stand: red tripod stand1-red tripod stand2: 20 pixels/units
+ Total obstacles: 2, Soft (human), Positions: Before gate: 0, After gate: 2, Spacing: Closely spaced, Distances between humans: human1-human2: 5 pixels/units, human2-human3: 10 pixels/units
+ Total obstacles: 3, Hard (red tripod stand), Positions: Before gate: 1, After gate: 2, Spacing: Widely spaced, Distances between red tripod stand: red tripod stand1-red tripod stand2: 20 pixels/units
+ Total obstacles: 3, Soft (human), Positions: Before gate: 1, After gate: 2, Spacing: Widely spaced, Distances between humans: human1-human2: 10 pixels/units, human2-human3: 15 pixels/units
+ Total obstacles: 3, Hard (red tripod stand), Positions: Before gate: 1, After gate: 2, Spacing: Closely spaced, Distances between red tripod stand: red tripod stand1-red tripod stand2: 20 pixels/units
+ Total obstacles: 3, Soft (human), Positions: Before gate: 1, After gate: 2, Spacing: Closely spaced, Distances between humans: human1-human2: 10 pixels, human2-human3: 15 pixels
+ Total obstacles: 5, Hard (red tripod stand), Positions: Before gate: 0, After gate: 5, Spacing: Widely spaced, Distances between red tripod stand: red tripod stand1-red tripod stand2: 20 pixels/units
+ Total obstacles: 4, Soft (human), Positions: Before gate: 0, After gate: 4, Spacing: Widely spaced, Distances between humans: human1-human2: 20 pixels/units, human2-human3: 15 pixels/units, human3-human4: 10 pixels/units, human4-human5: 5 pixels/units
+ Total obstacles: 5, Hard (red tripod stand), Positions: Before gate: 0, After gate: 5, Spacing: Closely spaced, Distances between red tripod stand: red tripod stand1-red tripod stand2: 20 pixels/units
+ Total obstacles: 4, Soft (human), Positions: Before gate: 0, After gate: 4, Spacing: Closely spaced, Distances between humans: human1-human2: 10 pixels/units, human2-human3: 15 pixels/units, human3-human4: 20 pixels/units, human4-human5: 25 pixels/units
+ Total obstacles: 5, Hard (red tripod stand), Positions: Before gate: 0, After gate: 5, Spacing: Widely spaced, Distances between red tripod stand: red tripod stand1-red tripod stand2: 20 pixels/units
+ Total obstacles: 4, Soft (human), Positions: Before gate: 0, After gate: 4, Spacing: Closely spaced, Distances between humans: human1-human2: 10 pixels/units, human2-human3: 15 pixels/units, human3-human4: 20 pixels/units, human4-human5: 25 pixels/units
+ Total obstacles: 5, Hard (red tripod stand), Positions: Before gate: 0, After gate: 5, Spacing: Closely spaced, Distances between red tripod stand: red tripod stand1-red tripod stand2: 20 pixels/units
+ Total obstacles: 4, Soft (human), Positions: Before gate: 0, After gate: 4, Spacing: Widely spaced, Distances between humans: human1-human2: 10 pixels/units, human2-human3: 15 pixels/units, human3-human4: 20 pixels/units, human4-human5: 25 pixels/units
