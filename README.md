@@ -78,21 +78,24 @@ The optimal parameters reflected:
 - **Large deflection and soft compliance** for **soft obstacles**
 - **Small deflection and rigid compliance** for **hard obstacles**
 
-This data was saved in a file named `scenarios_description.json`. To prepare it for use with Retrieval-Augmented Generation (RAG), vector embeddings can be generated using the following script:
+This data was saved in the file `rag_vlm/scenarios_description.json`. To prepare it for use with Retrieval-Augmented Generation (RAG), vector embeddings can be generated using the following script:
 
 ```
+cd ImpedanceGPT/rag_vlm.py
 python3 create_vector_embeddings.py
 ```
 
 To run the VLM model and retrieve the corresponding impedance parameters based on the current scenario, use the following script:
 
 ```
+cd ImpedanceGPT/rag_vlm.py
 python3 rag_vlm.py
 ```
 
 The impedance parameters output by the above script are then passed to the Artificial Potential Field (APF) planner, which uses them to control the swarm of drones. The code is written in ROS1. To run the full swarm navigation from start to goal using these parameters, execute:
 
 ```
+cd ImpedanceGPT/APF
 python3 swarm_vlm.py
 ```
 
