@@ -109,7 +109,7 @@ python swarm_vlm.py
 <!-- Experiment 2 -->
 <p align="center">
   <img src="Experimental_results/Experiment_02.png" width="300" height="250">
-  <img src="Experimental_results/exp2.png" width="300" height="250">
+  <img src="Experimental_results/exp2.png" width="300" height="300">
 </p>
 
 **Scenario 2**: Involving 2 static soft obstacles and a rectangular gate, the maximum velocity dropped to **0.7 m/s**, highlighting the system’s ability to modulate speed for safer navigation around soft obstacles.
@@ -118,7 +118,7 @@ python swarm_vlm.py
 <!-- Experiment 3 -->
 <p align="center">
   <img src="Experimental_results/Experiment_03.png" width="300" height="250">
-  <img src="Experimental_results/exp3.png" width="300" height="250">
+  <img src="Experimental_results/exp3.png" width="300" height="300">
 </p>
 
 **Scenario 3**: Featuring hard obstacles, a gate, and a moving goal, the maximum velocity recorded was **1.0 m/s**. Drones effectively avoided obstacles while dynamically adjusting their paths.
@@ -127,7 +127,7 @@ python swarm_vlm.py
 <!-- Experiment 4 -->
 <p align="center">
   <img src="Experimental_results/Experiment_04.png" width="300" height="250">
-  <img src="Experimental_results/exp4.png" width="300" height="250">
+  <img src="Experimental_results/exp4.png" width="300" height="300">
 </p>
 
 **Scenario 4**: With one dynamic and one static soft obstacle, the velocity further decreased to **0.6 m/s**, demonstrating the system’s adaptive response to ensure safety around soft, dynamic obstacles.
