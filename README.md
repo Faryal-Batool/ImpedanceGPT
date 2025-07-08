@@ -8,6 +8,7 @@ It contains:
 
 ## Table of Contents
 - [Abstract](#abstract)
+- [ImpedanceGPT Framework](#impedancegpt-framework)
 - [Novelty](#novelty)
 - [Installation](#installation)
 - [Usage Instructions](#usage-instructions)
@@ -28,7 +29,7 @@ Experimental evaluations demonstrate the effectiveness of the system. The VLM-RA
 https://arxiv.org/abs/2503.02723
 
 
-### ImpedanceGPT Framework
+## ImpedanceGPT Framework
 
 ![ImpedanceGPT Framework Diagram](system_overview.png)
 
