@@ -104,7 +104,7 @@ python3 swarm_vlm.py
 <!-- Experiment 1 -->
 <p align="center">
   <img src="Experimental_results/Experiment_1_new.png" width="300" height="250">
-  <img src="Experimental_results/exp1.png" width="300" height="280">
+  <img src="Experimental_results/exp1.png" width="300" height="300">
 </p>
 
 **Scenario 1**: With 4 static hard obstacles and a rectangular gate, the drones reached a maximum velocity of **1.4 m/s**. The significant overlap in trajectories indicates faster and more confident navigation.
