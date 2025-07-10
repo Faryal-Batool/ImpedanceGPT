@@ -98,7 +98,7 @@ python swarm_vlm.py
 
 <!-- Experiment 1 -->
 <p align="center">
-  <img src="Experimental_results/Experiment_1.png" width="300" height="250">
+  <img src="Experimental_results/Experiment_1_new.png" width="300" height="250">
   <img src="Experimental_results/exp1.png" width="300" height="250">
 </p>
 
@@ -106,7 +106,7 @@ python swarm_vlm.py
 
 <!-- Experiment 2 -->
 <p align="center">
-  <img src="Experimental_results/Experiment_02.png" width="300" height="250">
+  <img src="Experimental_results/Experiment_02_new.png" width="300" height="250">
   <img src="Experimental_results/exp2.png" width="300" height="250">
 </p>
 
@@ -115,7 +115,7 @@ python swarm_vlm.py
 
 <!-- Experiment 3 -->
 <p align="center">
-  <img src="Experimental_results/Experiment_03.png" width="300" height="250">
+  <img src="Experimental_results/Experiment_03_new.png" width="300" height="250">
   <img src="Experimental_results/exp3.png" width="300" height="250">
 </p>
 
@@ -124,7 +124,7 @@ python swarm_vlm.py
 
 <!-- Experiment 4 -->
 <p align="center">
-  <img src="Experimental_results/Experiment_04.png" width="300" height="250">
+  <img src="Experimental_results/Experiment_04_new.png" width="300" height="250">
   <img src="Experimental_results/exp4.png" width="300" height="250">
 </p>
 
