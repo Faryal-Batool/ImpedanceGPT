@@ -104,7 +104,7 @@ python3 swarm_vlm.py
 <!-- Experiment 1 -->
 <p align="center">
   <img src="Experimental_results/Experiment_1_new.png" width="300" height="250">
-  <img src="Experimental_results/exp1.png" width="300" height="250">
+  <img src="Experimental_results/exp1.png" width="300" height="280">
 </p>
 
 **Scenario 1**: With 4 static hard obstacles and a rectangular gate, the drones reached a maximum velocity of **1.4 m/s**. The significant overlap in trajectories indicates faster and more confident navigation.
@@ -112,7 +112,7 @@ python3 swarm_vlm.py
 <!-- Experiment 2 -->
 <p align="center">
   <img src="Experimental_results/Experiment_02_new.png" width="300" height="250">
-  <img src="Experimental_results/exp2.png" width="300" height="250">
+  <img src="Experimental_results/exp2.png" width="300" height="280">
 </p>
 
 **Scenario 2**: Involving 2 static soft obstacles and a rectangular gate, the maximum velocity dropped to **0.7 m/s**, highlighting the system’s ability to modulate speed for safer navigation around soft obstacles.
@@ -121,7 +121,7 @@ python3 swarm_vlm.py
 <!-- Experiment 3 -->
 <p align="center">
   <img src="Experimental_results/Experiment_03_new.png" width="300" height="250">
-  <img src="Experimental_results/exp3.png" width="300" height="250">
+  <img src="Experimental_results/exp3.png" width="300" height="280">
 </p>
 
 **Scenario 3**: Featuring hard obstacles, a gate, and a moving goal, the maximum velocity recorded was **1.0 m/s**. Drones effectively avoided obstacles while dynamically adjusting their paths.
@@ -130,7 +130,7 @@ python3 swarm_vlm.py
 <!-- Experiment 4 -->
 <p align="center">
   <img src="Experimental_results/Experiment_04_new.png" width="300" height="250">
-  <img src="Experimental_results/exp4.png" width="300" height="250">
+  <img src="Experimental_results/exp4.png" width="300" height="280">
 </p>
 
 **Scenario 4**: With one dynamic and one static soft obstacle, the velocity further decreased to **0.6 m/s**, demonstrating the system’s adaptive response to ensure safety around soft, dynamic obstacles.
