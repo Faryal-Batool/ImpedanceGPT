@@ -81,14 +81,14 @@ The optimal parameters reflected:
 This data was saved in the file `rag_vlm/scenarios_description.json`. To prepare it for use with Retrieval-Augmented Generation (RAG), vector embeddings can be generated using the following script:
 
 ```
-cd ImpedanceGPT/rag_vlm.py
+cd ImpedanceGPT/rag_vlm
 python3 create_vector_embeddings.py
 ```
 
 To run the VLM model and retrieve the corresponding impedance parameters based on the current scenario, use the following script:
 
 ```
-cd ImpedanceGPT/rag_vlm.py
+cd ImpedanceGPT/rag_vlm
 python3 rag_vlm.py
 ```
 
