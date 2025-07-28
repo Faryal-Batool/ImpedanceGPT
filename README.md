@@ -18,9 +18,7 @@ It contains:
 
 ## Abstract
 
-Swarm robotics plays a crucial role in enabling autonomous operations in dynamic and unpredictable environments. However, a major challenge remains ensuring safe and efficient navigation in environments shared by both dynamic alive (e.g., humans) and dynamic inanimate (e.g., non-living objects) obstacles.
-
-In this paper, we propose **ImpedanceGPT**, a novel system that combines a Vision-Language Model (VLM) with retrieval-augmented generation (RAG) to enable real-time reasoning for adaptive navigation of mini-drone swarm in complex environments.
+Swarm robotics plays a crucial role in enabling autonomous operations in dynamic and unpredictable environments. However, a major challenge remains ensuring safe and efficient navigation in environments shared by both dynamic alive (e.g., humans) and dynamic inanimate (e.g., non-living objects) obstacles.In this paper, we propose **ImpedanceGPT**, a novel system that combines a Vision-Language Model (VLM) with retrieval-augmented generation (RAG) to enable real-time reasoning for adaptive navigation of mini-drone swarm in complex environments.
 
 The key innovation of **ImpedanceGPT** lies in the integration of VLM-RAG system with impedance control which is an active compliance strategy. This system provides the drones with enhanced semantic understanding of their surroundings and dynamically adjusts impedance control parameters in response to obstacle types and environmental conditions. Our approach not only ensures safe and precise navigation but also improves coordination between drones in the swarm.
 
@@ -92,7 +90,7 @@ cd ImpedanceGPT/rag_vlm
 python3 rag_vlm.py
 ```
 
-The impedance parameters output by the above script are then passed to the Artificial Potential Field (APF) planner, which uses them to control the swarm of drones. The code is written in ROS1. To run the full swarm navigation from start to goal using these parameters, execute:
+The impedance parameters output by the above script are then passed to the Artificial Potential Field (APF) planner, which uses them to control the swarm of drones. The code is written in ROS2. To run the full swarm navigation from start to goal using these parameters, execute:
 
 ```
 cd ImpedanceGPT/APF
