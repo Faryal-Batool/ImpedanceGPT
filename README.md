@@ -8,6 +8,7 @@ It contains:
 
 ## Table of Contents
 - [Abstract](#abstract)
+- [Dataset Collection](#dataset-collection)
 - [ImpedanceGPT Framework](#impedancegpt-framework)
 - [Novelty](#novelty)
 - [Installation](#installation)
@@ -25,6 +26,73 @@ The key innovation of **ImpedanceGPT** lies in the integration of VLM-RAG system
 Experimental evaluations demonstrate the effectiveness of the system. The VLM-RAG framework achieved an obstacle detection and retrieval accuracy of **80%** under optimal lighting. In static environments, drones navigated dynamic inanimate obstacles at **1.4 m/s** but slowed to **0.7 m/s** with increased safety margin/separation around humans. In dynamic environments, speed adjusted to **1.0 m/s** near hard obstacles, while reducing to **0.6 m/s** with higher deflection region to safely avoid moving humans.
 
 https://arxiv.org/abs/2503.02723
+
+## Dataset Collection
+
+The **ImpedanceGPT** database was constructed using the Gym PyBullet simulator and contains optimal impedance parameters for **40 manually designed indoor navigation scenarios**. Each scenario includes different combinations of:
+
+- Obstacle types (e.g., humans, furniture, walls)
+- Obstacle counts
+- Spatial arrangements
+
+For each scenario, the following **impedance parameters** were recorded:
+
+- Virtual Mass: \( m \)  
+- Virtual Stiffness : \( k \)  
+- Virtual Damping : \( d \)  
+- External Virtual Force : \( F \)  
+- Separation distance of drones: \( c \)  
+
+These parameters were selected to ensure **safe and stable navigation** around different obstacle types using impedance-based control.
+
+
+### 🧩 Understanding Soft vs. Rigid Compliance
+
+Indoor environments often include both **animate (e.g., humans)** and **inanimate (e.g., walls, tables)** obstacles. To safely operate in such shared spaces, drones must adapt their behavior depending on the **risk of collision**, **required safety margin**, and **obstacle reactivity**.
+
+#### 🔹 Soft Compliance (for Soft/Alive Obstacles like Humans)
+
+Soft compliance aims to produce **gentle and energy-absorbing interactions** that reduce the risk of injury or discomfort. This is achieved with:
+
+- **Low stiffness**\ (↓ k\): Allows smooth and flexible deviation around humans  
+- **Moderate-to-high damping** \( ↑ d \): Prevents jitter and overshooting  
+- **Higher virtual mass** \( ↑ m \): Ensures stable motion  
+- **Larger separation distance** \( ↑ c \): Maintains a safe margin
+
+These parameters result in **low-impact energy** and **gentle avoidance**, which are ideal for socially acceptable navigation near humans.
+
+#### 🔹 Rigid Compliance (for Hard/Inanimate Obstacles)
+
+Rigid compliance is used when navigating near solid, immovable obstacles that pose a **collision risk** but do not require gentle interaction. In such cases, the controller enforces **precise, firm responses** with:
+
+- **High stiffness** \( ↑ k \): Quickly repels the drone away from the obstacle  
+- **High damping** \( ↑ d \): Suppresses oscillations in tight spaces  
+- **Low virtual mass** \( ↓ m \): Enables fast corrective actions  
+- **Smaller separation distance** \( ↓ c \): Maintains proximity without safety risk
+
+
+### 📏 How Optimal Parameters Were Selected
+
+Each scenario in simulation was evaluated based on the following **optimality criteria**:
+
+- **Collision-Free Swarm Navigation**: Drones maintain connectivity and avoid collisions  
+- **Safe Obstacle Avoidance**:
+  - **Low kinetic energy interaction** with humans  
+  - **Stable deflection and low-impact force** around soft obstacles  
+  - **Tight clearance with high control precision** around hard obstacles  
+- **Control Stability**: Smooth response, no overshooting, and rapid recovery
+
+Only the parameter sets that fulfilled these energy and safety-based criteria enabling **soft compliance for soft obstacles** and **rigid compliance for hard obstacles**  were retained in the database.
+
+### 🔍 Example Scenarios
+
+Below are two sample scenarios from our database:
+
+1. **Scenario 1 (Rigid Compliance):** Two cylindrical inanimate obstacles  
+2. **Scenario 2 (Soft Compliance):** A single human obstacle
+
+![Dataset Collection](Dataset_collection_v2.png) 
+These examples illustrate how **ImpedanceGPT** adjusts compliance behavior based on obstacle type to ensure both safety and efficiency during drone navigation in complex indoor environments.
 
 
 ## ImpedanceGPT Framework
@@ -63,18 +131,12 @@ pip install -r requirements.txt
 
 ## Usage Instructions
 
-### Database Creation
-
-The database was created using Gym-PyBullet simulation for **40 different scenarios**. For each scenario, the following information was stored in a JSON file:
+For each scenario, the following information was stored in a JSON file:
 
 - **Obstacle type**
 - **A textual description** explaining the spatial arrangement and number of obstacles
 - **Optimal impedance parameters** for navigation
 
-The optimal parameters reflected:
-
-- **Large deflection and soft compliance** for **soft obstacles**
-- **Small deflection and rigid compliance** for **hard obstacles**
 
 This data was saved in the file `rag_vlm/scenarios_description.json`. To prepare it for use with Retrieval-Augmented Generation (RAG), vector embeddings can be generated using the following script:
 
