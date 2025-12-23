@@ -203,13 +203,15 @@ python3 swarm_vlm.py
 ## Citation
 
 ```bibtex
-@misc{batool2025impedancegptvlmdrivenimpedancecontrol,
-      title={ImpedanceGPT: VLM-driven Impedance Control of Swarm of Mini-drones for Intelligent Navigation in Dynamic Environment}, 
-      author={Faryal Batool and Malaika Zafar and Yasheerah Yaqoot and Roohan Ahmed Khan and Muhammad Haris Khan and Aleksey Fedoseev and Dzmitry Tsetserukou},
-      year={2025},
-      eprint={2503.02723},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO},
-      url={https://arxiv.org/abs/2503.02723}, 
+@INPROCEEDINGS{11247031,
+  author={Batool, Faryal and Yaqoot, Yasheerah and Zafar, Malaika and Khan, Roohan Ahmed and Khan, Muhammad Haris and Fedoseev, Aleksey and Tsetserukou, Dzmitry},
+  booktitle={2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+  title={ImpedanceGPT: VLM-driven Impedance Control of Swarm of Mini-drones for Intelligent Navigation in Dynamic Environment}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={2592-2597},
+  keywords={Technological innovation;Navigation;Retrieval augmented generation;Semantics;Swarm robotics;Real-time systems;Safety;Impedance;Drones;Software development management;Vision-Language-Model;Impedance Control;Path Planning;Retrieval-Augmented Generation},
+  doi={10.1109/IROS60139.2025.11247031}}
 }
 ```
